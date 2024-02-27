@@ -1,6 +1,8 @@
 within ;
 package SMArtIInt
-annotation (uses(Modelica(version="4.0.0")),
+annotation (uses(
+  Modelica(version="4.0.0"),
+  ClaRaDelay(version="0.2.0")),
   Documentation(info="<html>
 </html>"),
   Icon(graphics={Rectangle(

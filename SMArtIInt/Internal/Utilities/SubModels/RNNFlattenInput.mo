@@ -1,7 +1,7 @@
 within SMArtIInt.Internal.Utilities.SubModels;
 model RNNFlattenInput
 
-  import gdv = SMArtIInt.Internal.ClaRaDelay.getDelayValuesAtTimeArray;
+  import gdv = ClaRaDelay.getDelayValuesAtTimeArray;
   import HFM = SMArtIInt.Internal.Utilities.SubModels.RNNFlatteningMethod;
 
   parameter Boolean useClaRaDelay=true;
@@ -26,8 +26,8 @@ model RNNFlattenInput
 
   //Pointers for inputFlattenTensor2 and delayedInputs
   //Note: in contrast to Modelica delay we need only 1 delay-table pointer per input.
-  SMArtIInt.Internal.ClaRaDelay.ExternalTables pointer_inputFlattenTensor=
-      SMArtIInt.Internal.ClaRaDelay.ExternalTables(nInputs);
+  ClaRaDelay.ExternalTables pointer_inputFlattenTensor=
+      ClaRaDelay.ExternalTables(nInputs);
 
   //////////////////////////////////////////////////////////////////////////////////
   //DelayTimes for ClaRaDelay

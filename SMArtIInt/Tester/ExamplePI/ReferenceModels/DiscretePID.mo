@@ -1,7 +1,7 @@
 within SMArtIInt.Tester.ExamplePI.ReferenceModels;
 model DiscretePID
   extends Modelica.Blocks.Interfaces.SISO;
-  import gdv = SMArtIInt.Internal.ClaRaDelay.getDelayValuesAtTime;
+  import gdv = ClaRaDelay.getDelayValuesAtTime;
   import Modelica.Units.SI;
 
   parameter Real k(unit="1") = 1 "Gain";
